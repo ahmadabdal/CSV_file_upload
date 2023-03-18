@@ -4,8 +4,8 @@
   "description": "- In this project, i have used \"MULTER\" library (We can also say middleware) to upload the CSV file.",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Abdal",
