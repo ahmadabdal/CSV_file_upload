@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <!-- <script src="https://kit.fontawesome.com/44c6087d03.js" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/260497237c.js" crossorigin="anonymous"></script>
+
+    
+    <title>Files</title>
+</head>
+<body>
+    <div class="main-body">
+        <section class="container">
+       <div id="text-body"> <h1 id="text"> CSV File Upload</h1></div>
+    <form class="form" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" id="file1" required class="file-input file-input-bordered file-input-success w-full max-w-xs "  />
+        <input type="submit" name="submit" class="btn glass" id="submit" value="Submit">
+    </form>
+    <div class="file-list" id="lisss" >
+        <% for(f of file) {%>
+            <div class="file-lists">
+                <a class="file_btn" href="/upload/file/<%= f.file %>"> 
+                    <button class="btn btn-wide btn glass"><%= f.originalName %>
+                    </button>
+                </a>
+
+                <a href="/delete/<%= f.file %>">
+                    <button class="btn btn-square btn-error">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                      </button>
+                </a>
+
+            </div>
+        <% } %> 
+    </div>
+<div>
+
+</div>
+</section>
+</div>
+</body>
+</html>

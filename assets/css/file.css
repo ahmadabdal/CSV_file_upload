@@ -1,0 +1,38 @@
+
+body{
+    margin: auto;
+    padding:50px;
+    color: white;
+}
+#search-box{
+    margin: 10px 0px 25px 0px;
+}
+
+#search{
+    height: 28px;
+    font-size:1rem ;
+    padding: 0px 8px;
+    border-radius: 4px;
+    border: 1px solid gold;
+}
+#opt{
+    border: 1px solid gold;
+    height: 30px;
+    border-radius: 4px;
+
+}
+
+#goback{
+    text-decoration: none;
+    color:white;
+    margin-top: 2px;
+
+
+}
+table {
+    width: 100%;
+  }
+  table, th, td {
+    border: 1px solid gold;
+  }
+
